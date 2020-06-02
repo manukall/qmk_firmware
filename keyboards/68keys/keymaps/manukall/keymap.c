@@ -17,6 +17,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_MPRV, KC_VOLD, KC_MNXT)
 };
 
+// jk as escape
+const uint16_t PROGMEM test_combo[] = {KC_F, KC_D, COMBO_END};
+combo_t key_combos[COMBO_COUNT] = {COMBO(test_combo, KC_ESC)};
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   // If console is enabled, it will print the matrix position and status of each key pressed
 #ifdef CONSOLE_ENABLE

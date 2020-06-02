@@ -40,3 +40,6 @@
 /* key combination for magic key command */
 #define IS_COMMAND() ( \
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
+
+#define COMBO_COUNT 1
+#define COMBO_TERM 300
