@@ -15,7 +15,6 @@
  */
 #pragma once
 
-
 /* Used to set host for remote KB if VUSB detect doesn't work. */
 // #define KEYBOARD_HOST // Force host mode
 // #define KEYBOARD_REMOTE // Force remote mode
@@ -33,7 +32,21 @@
  * The nibble uses a demultiplexer for the cols.
  * to free up more IOs for awesomeness!
  * See matrix.c for more details.
-*/
-#define MATRIX_ROW_PINS { B1, B3, B2, B6, D4 }
-#define MATRIX_COL_MUX_PINS { F4, F5, F6, F7 }
-#define MATRIX_COL_PINS { }
+ */
+#define MATRIX_ROW_PINS {B1, B3, B2, B6, D4}
+#define MATRIX_COL_MUX_PINS {F4, F5, F6, F7}
+#define MATRIX_COL_PINS \
+    {}
+
+/* Optional SMT LED pins */
+#define RGB_DI_PIN E6
+#define RGBLED_NUM 10
+#define RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_SLEEP
+
+/* Optional encoder pins */
+#define ENCODERS_PAD_A {B5}
+#define ENCODERS_PAD_B {B4}
+
+#define COMBO_COUNT 1
+#define COMBO_TERM 300

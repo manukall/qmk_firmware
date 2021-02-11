@@ -2,6 +2,8 @@ CUSTOM_MATRIX = lite
 
 UART_DRIVER_REQUIRED = yes
 
+COMBO_ENABLE = yes
+
 # Project specific files
 SRC += matrix.c \
        common/bitc_led.c \
