@@ -27,6 +27,8 @@ ENCODER_ENABLE = yes        # Use rotary encoder
 LTO_ENABLE = yes            # Link-time optimization
 CUSTOM_MATRIX = lite        # Lite custom matrix 
 
+COMBO_ENABLE = yes
+
 # Project specific files
 SRC += matrix.c \
        bitc_led.c \

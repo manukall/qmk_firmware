@@ -59,3 +59,6 @@
 /* Optional encoder pins */
 #define ENCODERS_PAD_A { B5 }
 #define ENCODERS_PAD_B { B4 }
+
+#define COMBO_COUNT 1
+#define COMBO_TERM 300
